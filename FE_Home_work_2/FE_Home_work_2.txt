@@ -1,0 +1,50 @@
+INDEX:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Die besten Fahrräder in Berlin</h1>
+    <p>
+        Einfach mal wieder Natur genießen und die Landschaft erkunden - mit dem PROPHETE ENTDECKER bereiten kleine und große
+        Auszeiten vom Alltag besonders viel Vergnügen. Egal, ob Sie Gepäck, Proviant oder einfach nur Ihre Einkäufe
+        transportieren wollen, die im Gesamtpaket enthaltenen Seitenpacktaschen bieten mit ihren je 20 Liter Volumen jede
+        Menge Stauraum und sind zu 100% wasserdicht. Dabei macht das tourentaugliche Trekkingbike sowohl auf holprigen Feld-
+        und Waldwegen, als auch auf glattem Asphalt eine tolle Figur.
+    </p>
+    <p>
+        Das Zündapp FX27 ist ein schickes, zuverlässiges Mountainbike in der Zwischengröße 27,5 Zoll, das sich als
+        Alltagsrad und Bike für Ausflüge gleichermaßen eignet. Du möchtest deine täglichen Wegstrecken lieber mit dem Rad
+        als dem Auto zurücklegen und genießt in deiner Freizeit gern die Natur auf zwei Rädern? Das FX27 ist dein treuer
+        Begleiter in allen Lebenslagen.
+    </p>
+    <p>
+        Puristisches Weiß für den Asphaltdschungel: Das Adore 28" Herren-Urbanbike "FWD" ist ein flinker Stadtflitzer und
+        überzeugt mit seinem schlichten Understatement und cleaner Optik.
+        Das leichte Aluminium-Bike ist mit einer 21-Gang-Kettenschaltung ausgestattet. Mechanische Scheibenbremsen
+        garantieren sichere Verzögerung.
+    </p>
+</body>
+</html>
+
+
+STYLE:
+
+h1 {
+    font-size: 50px;
+    margin-left: 100px;
+}
+p {
+    font-size: 20px;
+    background-color: #34495E;
+    border-radius: 20px;
+    padding: 21px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
