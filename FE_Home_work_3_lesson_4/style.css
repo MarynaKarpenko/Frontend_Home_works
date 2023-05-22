@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: 'East Sea Dokdo', cursive;
+font-family: 'Inter', sans-serif;
+margin-left: 30px;
+padding-top: 20px;
+}
+header {
+    font-size: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+ul {
+    padding-left: 40px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    font-size: 20px;
+    border-collapse: collapse;
+}
+img {
+    width: 40px;
+    height: 30px;
+    padding: 2px;
+}
