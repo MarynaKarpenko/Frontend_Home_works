@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: darkgreen;
+    margin-top: 20px; 
+}
+.band_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.band_2 {
+    display: flex;
+    justify-content: space-between;
+}
+.band_3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(251, 255, 0);
+    margin: 10px;
+}
+.item_1 {
+    width: calc(30% - 5px);;
+    height: 150px;
+    background-size: cover;
+    background-color: rgb(251, 255, 0);
+    margin: 10px;
+}
