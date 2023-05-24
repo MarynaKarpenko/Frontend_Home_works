@@ -8,16 +8,16 @@ main {
     background-color: darkgreen;
     margin-top: 20px; 
 }
-.band_1 {
+.container_1 {
     display: flex;
     justify-content: center;
 }
 
-.band_2 {
+.container_2 {
     display: flex;
     justify-content: space-between;
 }
-.band_3 {
+.container_3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -29,7 +29,7 @@ main {
     margin: 10px;
 }
 .item_1 {
-    width: calc(30% - 5px);;
+    width: calc(30% - 10px);;
     height: 150px;
     background-size: cover;
     background-color: rgb(251, 255, 0);
