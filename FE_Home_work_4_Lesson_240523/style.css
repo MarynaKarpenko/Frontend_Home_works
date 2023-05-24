@@ -23,14 +23,14 @@ main {
     flex-wrap: wrap;
 }
 .item {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-color: rgb(251, 255, 0);
     margin: 10px;
 }
 .item_1 {
-    width: calc(30% - 10px);;
-    height: 150px;
+    width: calc(33% - 20px);;
+    height: 200px;
     background-size: cover;
     background-color: rgb(251, 255, 0);
     margin: 10px;
