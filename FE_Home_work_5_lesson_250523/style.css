@@ -16,6 +16,12 @@ section {
 .text-right {
     text-align: right;
 }
+.closse {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer; 
+}
 h2 {
     margin-left: 16px;
     margin-bottom: 24px;
