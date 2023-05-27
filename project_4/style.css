@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(223, 212, 212);
+    padding: 20px;
+}
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+h1:hover {
+    color: red;
+}
+main {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: rgb(223, 212, 212);
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+.item {
+    width: calc(50% - 20px);
+    aspect-ratio: 16/9;
+    background-color: blue;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+    border-radius: 8px;
+}
+.item:hover {
+    transform: scale(1.05) rotate(5deg); 
+}
+.item-1 {
+    background-image: url(./волк.jpeg);
+}
+.item-2 {
+    background-image: url(./енот.jpeg);
+}
+.item-3 {
+    background-image: url(./кот.jpeg);
+}
+.item-4 {
+    background-image: url(./лев.jpeg);
+}
+.item-5 {
+    background-image: url(./панда.jpeg);
+}
+.item-6 {
+    background-image: url(./собака.jpeg);
+}
+.item-7 {
+    background-image: url(./тигр.jpeg);
+}
+.item-8 {
+    background-image: url(./улитка.jpeg);
+}
