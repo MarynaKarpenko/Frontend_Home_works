@@ -3,11 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+.element {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
 .item {
     width: 200px;
     height: 200px;
     position: absolute;
-    margin: 200px;
+    
 }
 .item-1 {
     background-color: red;
