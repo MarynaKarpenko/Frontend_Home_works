@@ -7,8 +7,7 @@
 
 // Task 2
 // const number = 55
-// for(let i = 0; i <= number; i++) {
-//     if(i >= 20) 
+// for(let i = 55; i >= 20; i--) {
 //     console.log(i)
 // }
 
