@@ -5,4 +5,5 @@
 # [Home_work_5_lesson_250523](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_5_lesson_250523/index.html)
 # [Home_work_6_lesson_300523](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_6_lesson_300523/index.html)
 # [Home_work_7_lesson_050623](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_7_lesson_05062023/index.html)
+# [Home_work_8_lesson_070623](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_8_lesson_07062023/index.html)
 
