@@ -12,7 +12,7 @@
 - [Home_work_4_lesson_240523_pages](FE_Home_work_4_Lesson_240523)
 ### HW_5
 - [Home_work_5_lesson_250523_code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_5_lesson_250523/index.html)
-- [Home_work_5_lesson_250523_pzges](FE_Home_work_5_lesson_250523)
+- [Home_work_5_lesson_250523_pages](FE_Home_work_5_lesson_250523)
 ### HW_6
 - [Home_work_6_lesson_300523_code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_6_lesson_300523/index.html)
 - [Home_work_6_lesson_300523_pages](FE_Home_work_6_lesson_300523)
