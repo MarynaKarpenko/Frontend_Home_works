@@ -1,6 +1,6 @@
 ### HW_1
-- [HW_1_code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_1/index.html)
-- [HW_1_pages](FE_Home_work_1)
+- [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_1/index.html)
+- [pages](FE_Home_work_1)
 ### HW_2
 - [Home_work_2_code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_2/index.html)
 - [Home_work_2_pages](FE_Home_work_1)
