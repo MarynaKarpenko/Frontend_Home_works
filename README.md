@@ -25,4 +25,7 @@
 ### HW_9_lesson_130623
 - [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_9_lesson_130623/index.html)
 - [pages](FE_Home_work_9_lesson_130623)
+### HW_10_lesson_140623
+- [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_10_lesson_140623/index.html)
+- [pages](FE_Home_work_10_lesson_140623)
 
