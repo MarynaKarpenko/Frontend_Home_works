@@ -20,9 +20,9 @@
 - [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_7_lesson_05062023/index.html)
 - [pages](FE_Home_work_7_lesson_05062023)
 ### HW_8_lesson_070623
-- [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_8_lesson_07062023/index.html)
+- [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_8_lesson_070623/index.html)
 - [pages](FE_Home_work_8_lesson_07062023)
 ### HW_9_lesson_130623
-- [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_8_lesson_07062023/index.html)
-- [pages](FE_Home_work_8_lesson_07062023)
+- [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_9_lesson_130623/index.html)
+- [pages](FE_Home_work_9_lesson_130623)
 
