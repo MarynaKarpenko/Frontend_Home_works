@@ -1,0 +1,26 @@
+.product {
+    width: 20%;
+    background-color: rgb(186, 161, 208);
+    padding: 20px;
+    margin: 30px;
+}
+
+h3 {
+    color: rgb(25, 3, 46);
+    font-size: 24px;
+}
+.category {
+    font-size: 20px;
+}
+.price {
+    color: red;
+    font-size: 30px;
+}
+.button {
+    background-color: rgb(25, 9, 70);
+    color: white;
+    padding: 5px 30px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
