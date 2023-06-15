@@ -1,8 +1,7 @@
 // Обращаться к кнопкам не по отдельно, а ко всем одновременно
 //             querySelectorAll()
 
-const buttons = document.querySelectorAll("button");
-
+let buttons = document.querySelectorAll("button");
 
 for (let i = 0; i < buttons.length; i++) {
     if (buttons[i].classList.contains('red-btn')) {
@@ -31,7 +30,10 @@ for (let i = 0; i < buttons.length; i++) {
         });
     } else if (buttons[i].classList.contains('img-btn')) {
         buttons[i].addEventListener("click", function () {
-            document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1685648043607-4763474b0101?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60')"
+            document.body.style.backgroundImage = "url('./img.jpg')"
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundRepeat = "no-repeat"
             buttons[i].style.backgroundColor = "white"
             buttons[i].style.color = "black"
         });
