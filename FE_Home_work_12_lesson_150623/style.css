@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    margin: 20px;
+    padding: 10px;
+    color: rgb(9, 77, 77);
+    font-size: 24px;
+    background-color: aquamarine;
+    border: 1px solid rgb(2, 29, 37);
+    border-radius: 3%;
+}
+.strings_container {
+    margin: 20px;
+    padding: 10px;
+    color: rgb(30, 21, 123);
+    font-size: 30px;
+}
+.users_container {
+    margin: 20px;
+    padding: 10px;
+    color: rgb(123, 21, 65);
+    font-size: 30px;
+}
