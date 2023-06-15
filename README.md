@@ -31,5 +31,7 @@
 ### HW_11_lesson_150623
 - [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_11_lesson_150623/index.html)
 - [pages](FE_Home_work_11_lesson_150623)
-  
+### HW_12_lesson_150623
+- [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_12_lesson_150623/index.html)
+- [pages](FE_Home_work_12_lesson_150623)
 
