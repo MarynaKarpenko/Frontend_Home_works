@@ -1,7 +1,7 @@
 // Обращаться к кнопкам не по отдельно, а ко всем одновременно
 //             querySelectorAll()
 
-let buttons = document.querySelectorAll("button");
+let buttons = document.querySelectorAll("button"); // buttons - это массив, повесить на него слушатель событий не сможем
 
 for (let i = 0; i < buttons.length; i++) {
     if (buttons[i].classList.contains('red-btn')) {
