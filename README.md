@@ -35,6 +35,6 @@
 - [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_12_lesson_150623/index.html)
 - [pages](FE_Home_work_12_lesson_150623)
 ### HW_13_GRID
-- [code](https://marynakarpenko.github.io/Frontend_Home_works/FE_Home_work_12_lesson_150623/index.html)
+- [code](https://marynakarpenko.github.io/Frontend_Home_works/Home_work_GRID/index.html)
 - [pages](Home_work_GRID)
 
