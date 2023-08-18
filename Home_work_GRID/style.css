@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-family: 'ABeeZee', sans-serif;
+}
+header {
+    background-color: #F4F9E2;
+    height: 840px;
+}
+.wrapper {
+    padding: 20px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 118px;
+}
+.connection {
+    width: 150px;
+    height: 50px;
+    background-color: #F9B640;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+}
+.nav-link {
+    color: #000;
+}
+.nav-link:not(:last-child){
+    margin-right: 70px;
+}
+.nav-link:not(:first-child) {
+    text-decoration: none;
+}
+.about {
+    display: flex;
+    align-items: center;
+}
+.about-text {
+    color: #22356F;
+    margin-left: 160px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+    text-align: justify;
+}
+.name {
+    margin-bottom: 45px;
+    font-size: 48px;
+}
+.about-name {
+    font-size: 24px;
+}
+.about-img {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+.advertising {
+    display: flex;
+    align-items: center;
+    height: 607px;
+    background-color: #62D0DF;
+}
+.advertising-text {
+    width: 63%;
+    text-align: justify;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.dvertising-text-title {
+    color: #FFF;
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.dvertising-text-par {
+    color: #FFF;
+    font-size: 24px;
+    font-style: italic;
+}
+.advertising-img {
+    width: 37%;
+    height: 100%;
+}
+.friend-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 633px;
+    background-color: #FFFFFF;
+    color: #22356F;
+    font-size: 24px;
+    font-style: italic;
+    margin-left: 400px;
+    margin-right: 300px;
+    gap: 40px;
+}
+.offers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 480px;
+    color: #FFF;
+    font-size: 32px;
+    font-style: italic;
+    
+}
+.THAT {
+    background: #22356F; 
+    display: grid;
+    grid-auto-rows: 126px;
+}
+.wheel {
+    background: #0052C1;
+    display: grid;
+    grid-auto-rows: 126px;
+}
+.setting {
+    background: #76B58B;
+    display: grid;
+    grid-auto-rows: 126px;
+}
+.offers-text {
+    padding-left: 70px;
+}
+.offers-img {
+    width: 340px;
+    padding-top: 100px;
+    justify-self: center;
+}
+.rent {
+    height: 800px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+.rent-img {
+    height: 100%;
+}
+.rent-text {
+    color: #22356F;
+    font-size: 36px;
+    font-style: italic;
+    margin-left: 57px;
+    margin-right: 57px;
+}
+.rent-text-h5 {
+    margin-bottom: 50px;
+}
