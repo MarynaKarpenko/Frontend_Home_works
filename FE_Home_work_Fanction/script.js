@@ -23,12 +23,8 @@ console.log(numSheep(sheep));
 // 2. Make a function that returns the value multiplied by 50 and increased by 6. 
 // If the value entered is a string it should return "Error".
 
-function math(callback) {
-    if (typeof value === 'string') {
-      return "Error"
-    } 
-    return callback(5) 
-}
+const math = (callback) => typeof value === 'string' ?"Error" : callback(5) 
+
 console.log(math((input) => input * 50 + 6));
 console.log(math((input) => 'some string'));
 
@@ -41,9 +37,7 @@ console.log(math((input) => 'some string'));
 
 // don't worry about uppercase vowels
 // y is not considered a vowel for this kata
-function shortcut (string) {
-    return string.replace(/[aeiou]/g, '');
-  }
+const shortcut = (string) => string.replace(/[aeiou]/g, '');
 console.log(shortcut("hello"));
 console.log(shortcut("codewars"));
 console.log(shortcut("goodbye"));
@@ -81,6 +75,9 @@ console.log(bmi(weight, height, getBmi));
 
 
 // 5. 
+const multiply = (a, b) => (a * b)
+
+console.log(multiply(5, 4));
 
 
 // 6. Complete the method that takes a boolean value and return a "Yes" string for true, 
@@ -126,36 +123,18 @@ console.log(totalSum)
 
 
 // 9. 
-const matches = ["3:1", "2:2", "0:1", "4:0", "1:1", "3:2", "2:1", "0:0", "1:2", "3:0"];
-
-function points(games, callback) {
+function points(games) {
     let totalPoints = 0;
-    for (let i = 0; i < games.length; i++) {
-        const [x, y] = games[i].split(":").map(Number);
-        const outcome = callback(x, y);
-        if (outcome === "win") {
-            totalPoints +=
-            totalPoints += 3;
-        } else if (outcome === "tie") {
-            totalPoints +=
-            totalPoints += 2;
-        } else if (outcome === "loss") {
-            totalPoints += 1;
+    games.forEach(element => {
+        if (element[0] > element[element.length - 1]) {
+            totalPoints += 3
+        } else if (element[0] == element[element.length - 1]) {
+            totalPoints ++
         }
-    }
+    });
     return totalPoints
 }
-function getPoints(x, y) {
-    if (x > y) {
-        return "win"
-    } else if (x < y) {
-        return "loss"
-    } else {
-        return "tie"
-    }
-}
-const totalPoints = points(matches, getPoints);
-console.log("Total points:", totalPoints);
+console.log(points(["3:1", "2:2", "0:1", "4:0", "1:1", "3:2", "2:1", "0:0", "1:2", "3:0"]));
 
 
 // 10. Nathan loves cycling.
