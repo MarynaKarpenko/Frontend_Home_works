@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 50px;
+}
+
+.card_wrapper {
+    position: relative;
+
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+.card_inform > h2, p, h5 {
+    margin: 20px;
+}
+.card_inform > h2 {
+    color: darkslateblue;
+}
+p {
+    color: darkred;
+    font-size: 18px;
+    font-weight: 700;
+}
+h5 {
+    color: darkgrey;
+    font-size: 14px;
+}
+
+button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid darkgrey;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+
+.form_container {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form_container > form {
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(232, 231, 231);
+}
+input {
+    padding: 5px;
+    color: rgb(39, 37, 37);
+}
+
+.form_container > .add_form > h2 {
+    color: darkred;
+}
+
+.form_container > .update_form > h2 {
+    color: darkblue;
+}
+
