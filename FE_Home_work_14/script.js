@@ -17,6 +17,7 @@ const div_container = document.createElement('div')
 div_container.className = 'container'
 div_root.append(div_container)
 
+
 const render = (arr) => {
     div_container.innerText = ''
     arr.forEach(elem =>{
@@ -127,7 +128,7 @@ div_form_add_form.addEventListener('submit', (event) => {
     render(names)
 })
 
-function updateUser(id, obj) {
+function updateWorker(id, obj) {
     let findWorker = worker.find(elem => elem.id == id)
     if(findWorker) {
         findWorker.name = obj.name
