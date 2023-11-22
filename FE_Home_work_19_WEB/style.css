@@ -5,73 +5,88 @@
     padding: 0;
     box-sizing: border-box;
 }
+.wrapper{
+    width: 1116px;
+    margin: 0 auto;
+}
+h3{
+    padding-bottom: 40px;
 
-body{
-    width: 1920px;
-    background-color: #EBEBEB;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 45px 400px 60px 400px;
-
-    background-color: #F9F9F9;
-}
-
-.logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-.logo img{
-    width: 40px;
-    height: 40px;
-}
-.logo h3{
-    color: #005FA3;
-    font-size: 36px;
+    font-family: 'Lato';
+    font-size: 24px;
     font-weight: 900;
-    font-family: 'Merriweather';
+    color: #BDBDBD;
 }
-.nav_menu ul {
+h2{
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+    color: #333;
+}
+.left_rigcht_btn {
     display: flex;
-    gap: 70px;
+    justify-content: right;
+    cursor: pointer;
+}
+.left_btn2,
+.right_btn2 {
+    width: 60px;
+    height: 60px;
+    background: var(--Accent, #005FA3);
+    border: none;
+}
+.left_btn2:hover,
+.right_btn2:hover {
+    opacity: 0.2;
+}
+/*NAV*/
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 68px;
+    padding: 28px 0;
 
+    color: #222222;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+.nav_menu li{
     list-style: none;
 }
 
-.presentation_section{
+/* Бургер меню*/
+.burger_menu {
+    width: 70px;
+    height: 70px;
+
+    display: none;
+}
+/* Бухгалтерские услуги в вашем городе */
+.img_presentation_section{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.presentation_section img{
+    width: 100%;
     height: 670px;
-}
-.content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: left;
-    padding-top: 170px;
-    margin-left: 400px;
-    
-
-    font-size: 48px;
-    font-weight: 700;
-    
-    color: #fff;
 }
 .content_p{
     width: 589px;
     height: 117px;
+}
+.content {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 170px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
 }
 .presentation_btn{
     width: 270px;
@@ -85,46 +100,32 @@ body{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.left_rigcht_btn{
-    display: flex;
-}
 .left_btn, .right_btn{
-    width: 25px;
-    height: 25px;
+    width: 60px;
+    height: 60px;
     opacity: 0.4;
     background: #FFF;
+    border: none;
 }
-
+.left_btn:hover,
+.right_btn:hover{
+    opacity: 0.2;
+}
+/* Наши услуги */
 .services_section{
-    height: 1242px;
-    
-    margin-top: 140px;
+    padding: 140px 0;
     background-color: #EBEBEB;
 }
-.content_services_section h6{
-    padding-bottom: 40px;
-    font-family: 'Lato';
-    font-size: 24px;
-    color: #BDBDBD;
-}
-.content_services_section{
-    margin-left: 400px;
-}
-.content_services_section h3{
-    padding-bottom: 100px;
-    font-family: 'Merriweather';
-    font-size: 48px;
-    color: #333;
-}
-
 .sessions_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 360px;
     gap: 30px;
-    margin-left: 400px;
 }
-
-.sessions_container div {
+.services_section h2 {
+    margin: 40px 0 100px 0;
+}
+.sessions_container p{
     width: 350px;
     height: 360px;
     background-position: center;
@@ -139,42 +140,29 @@ body{
     font-weight: 900;
 }
 .sessions_container div:hover{
-    background-color: #005FA3A6;
-    opacity: 0.6;
+    cursor: pointer;
+    background: #005FA3A6;
+    opacity: 0.65;
+    background-blend-mode: overlay;
 }
 
+/* О нас */
 .section_about{
-    width: 100%;
+    padding: 140px 0;
     background: #F9F9F9;
 }
-.about{
-    padding-top: 140px;
+.about_wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.about_text{
-    margin-left: 400px;
-}
-.about_text h6{
-    font-family: 'Lato';
-    font-size: 24px;
-    color: #BDBDBD;
-    font-weight: 900;
-    padding-bottom: 40px;
-}
-.about_text h3{
-    font-family: 'Merriweather';
-    font-size: 48px;
-    font-weight: 900;   
-}
-.about_text .black{
+.about.black{
     color: #333;
 }
-.about_text .blue {
+.about > .blue {
     color: #005FA3;
     padding-bottom: 60px;
 }
-.about_text p{
+.about > p{
     width: 445px;
     height: 245px;
     color: #000;
@@ -206,4 +194,86 @@ body{
 }
 .about_img div:hover a {
     color: white !important;
+}
+
+/* Наши клиенты */
+.section_our_clients h2{
+    margin: 40px 0 80px 0;
+}
+.section_our_clients{
+    background: #EBEBEB;
+    height: 630px;
+    padding: 100px 0 100px 0;
+}
+.microsoft img{
+    padding: 0 20px 0 0;
+}
+
+/* Отзывы */
+.contacts h2{
+    margin: 40px 0 80px 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 133px;
+    padding: 50px 0;
+}
+footer h6{
+    color: #000;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+@media(max-width: 850px) {
+    .wrapper{
+        width: 100%;
+    }
+    .burger_menu {
+        display: block;
+        cursor: pointer;
+    }
+    .nav_menu {
+        display: none;
+    }
+    .nav_menu.active {
+        display: block;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sessions_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;     
+    }
+    .presentation_section {
+        height: 100%;
+    }
+    .img_presentation_section{
+        width: auto;
+        height: 670px;
+    }
+    .left_rigcht_btn{
+        justify-content: left;
+    }
+    .about_wrapper{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .about_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }

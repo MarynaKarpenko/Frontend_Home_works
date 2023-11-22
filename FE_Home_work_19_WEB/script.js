@@ -1,7 +1,35 @@
+/* Burger menu */
+let burger_menu = document.querySelector('.burger_menu')
+let navigation = document.querySelector('nav')
+let setBurgerMenu = false
+
+burger_menu.onclick = () => {
+    burgerManuHandler()
+}
+function burgerManuHandler(){
+    if(!setBurgerMenu){
+        burger_menu.classList.add('active')
+        navigation.classList.add('active')
+    } else{
+        burger_menu.classList.remove('active')
+        navigation.classList.remove('active')
+    }
+    setBurgerMenu = !setBurgerMenu
+}
+
+window.onresize = (e) => {
+    if(e.target.outerWidth > 850){
+        navigation.classList.remove('active')
+    } else{
+        navigation.classList.add('active')
+    }
+}
+
+/* Бухгалтерские услуги в вашем городе */
 const presentation_section = [
     {
         id: 1,
-        title: "Бухгалтерские услуги в вашем городе"
+        title: "Бухгалтерские услуги в вашем городе 1"
     },
     {
         id: 2,
@@ -54,7 +82,7 @@ nextBtn.addEventListener('click', () => {
 // Добавляем вызов при загрузке страницы
 updateText(currentIndex);
 
-
+/* Наши услуги */
 const sessions_info = [
   {
     id: 1,
@@ -103,6 +131,7 @@ sessions_info.forEach(el => {
 });
 
 
+/* О нас */
 const about_section_img = [
   {
     id: 1,
@@ -161,3 +190,60 @@ about_section_img.forEach(el => {
   cardElem.append(quantityElem, titleElem, buttonElem);
   aboutContainer.append(cardElem);
 });
+
+/* Наши клиенты */
+const sectionClients = [
+  {
+    id: 1,
+    img_URL: './IMG/Microsoft.png'
+  },
+  {
+    id: 2,
+    img_URL: './IMG/Microsoft.png'
+  },
+  {
+    id: 3,
+    img_URL: './IMG/Microsoft.png'
+  },
+  {
+    id: 4,
+    img_URL: './IMG/Microsoft.png'
+  },
+  {
+    id: 5,
+    img_URL: './IMG/Microsoft.png'
+  },
+  {
+    id: 6,
+    img_URL: './IMG/Microsoft.png'
+  }
+]
+const clientsSection = document.querySelector('.microsoft');
+
+const prevBtn2 = document.getElementById('prevBtn2');
+const nextBtn2 = document.getElementById('nextBtn2');
+
+let currentIndex2 = 0;
+
+function updateImages() {
+  clientsSection.innerHTML = ''; // Очистка содержимого контейнера
+
+  for (let i = 0; i < 4; i++) {
+    const img_URLElem = document.createElement('img');
+    img_URLElem.src = sectionClients[i].img_URL;
+    clientsSection.append(img_URLElem);
+  }
+}
+
+prevBtn2.addEventListener('click', () => {
+  currentIndex2 = (currentIndex2 - 1 + sectionClients.length) % sectionClients.length;
+  updateImages();
+});
+
+nextBtn2.addEventListener('click', () => {
+  currentIndex2 = (currentIndex2 + 1) % sectionClients.length;
+  updateImages();
+});
+
+// Инициализация при загрузке страницы
+updateImages();

@@ -7,49 +7,58 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="wrapper header">
-        <div  class="logo">
-            <img src="./IMG/logo.png" alt="">
-            <h3>BuhOne</h3>
+    <header>
+        <div class="wrapper">
+            <img src="./IMG/BuhOne_logo.png" alt="BuhOne">
+            <nav>
+                <ul class="nav_menu">
+                    <li>Главная</li>
+                    <li>Услуги</li>
+                    <li>Кейсы</li>
+                    <li>О компании</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+    
         </div>
-        <nav class="nav_menu">
-            <ul>
-                <li>Главная</li>
-                <li>услуги</li>
-                <li>кейсы</li>
-                <li>о компании</li>
-                <li>контакты</li>
-            </ul>
-        </nav>
+        <div class="burger_menu">
+            <span>
+                <img src="./IMG/burger_menu.png" alt="burger_menu">
+            </span>
+        </div>
     </header>
+
     <main>
         <section class="presentation_section">
-            <div class="content">
-                <div class="content_p"></div>
-                <button class="presentation_btn">Наша презентация</button>
-                <div class="left_rigcht_btn">
-                    <button class="left_btn" id="prevBtn"><</button>
-                    <button class="right_btn" id="nextBtn">></button>
+            <img class="img_presentation_section" src="./IMG/presentation.png" alt="">
+            <div class="wrapper">
+                <div class="content">
+                    <div class="content_p"></div>
+                    <button class="presentation_btn">Наша презентация</button>
+                    <div class="left_rigcht_btn">
+                        <button class="left_btn" id="prevBtn"><</button>
+                        <button class="right_btn" id="nextBtn">></button>
+                    </div>
                 </div>
-                
             </div>
-            <img src="./IMG/presentation.png" alt="">
+            
         </section>
 
         <section class="services_section">
-            <div class="content_services_section">
-                <h6>Наши услуги</h3>
-                <h3>Мы специализируемся</h3>
+            <div class="wrapper content_services_section">
+                <h3>Наши услуги</h3>
+                <h2>Мы специализируемся</h2>
+                <div class="sessions_container"></div>
             </div>
-            <div class="sessions_container"></div>
+            
         </section>
 
         <section class="section_about">
-            <div class="about">
-                <div class="about_text">
-                    <h6>О нас</h6>
-                    <h3 class="black">Компания</h3>
-                    <h3 class="blue">ИвановПром</h3>
+            <div class="wrapper about_wrapper">
+                <div class="about">
+                    <h3>О нас</h6>
+                    <h2 class="black">Компания</h3>
+                    <h2 class="blue">ИвановПром</h3>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
                         "рыбой" для
                         текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и
@@ -60,9 +69,36 @@
                 </div>
                 <div class="about_img"></div>
             </div>
-            
+        </section>
+
+        <section class="section_our_clients">
+            <div class="wrapper">
+                <h3>Наши клиенты</h3>
+                <h2>С нами работают</h2>
+                <div class="microsoft"></div>
+                <div class="left_rigcht_btn">
+                    <button class="left_btn2" id="prevBtn2"><</button>
+                    <button class="right_btn2" id="nextBtn2">></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="wrapper">
+                <h3>Отзывы</h3>
+                <h2>Ваши благодарности</h2>
+                <div class="left_rigcht_btn">
+                    <button class="left_btn2" id="prevBtn2"><</button>
+                    <button class="right_btn2" id="nextBtn2">></button>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <h6>2019 (с) Все права защищены. БухОне.ру</h6>
+        <h6>Разработано: BuhOne</h6>
+    </footer>
 
     <script src="./script.js"></script>
 </body>
