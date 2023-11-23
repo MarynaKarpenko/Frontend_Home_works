@@ -247,3 +247,81 @@ nextBtn2.addEventListener('click', () => {
 
 // Инициализация при загрузке страницы
 updateImages();
+
+/* Отзывы */
+const section_reviews_contacts = [
+  {
+    id: 1,
+    name: 'Екатерина Иванова',
+    position: 'Директор ООО “Раз-два”',
+    img_URL: './IMG/name_face.jpg'
+  },
+  {
+    id: 2,
+    name: 'Иван Иванов',
+    position: 'Менеджер ООО “Раз-два”',
+    img_URL: './IMG/name_face.jpg'
+  },
+  {
+    id: 3,
+    name: 'Петр Петров',
+    position: 'Менеджер ООО “Раз-два”',
+    img_URL: './IMG/name_face.jpg'
+  },
+  {
+    id: 4,
+    name: 'Татьяна Перова',
+    position: 'Менеджер ООО “Раз-два”',
+    img_URL: './IMG/name_face.jpg'
+  },
+  {
+    id: 5,
+    name: 'Василий Васильев',
+    position: 'Менеджер ООО “Раз-два”',
+    img_URL: './IMG/name_face.jpg'
+  },
+  {
+    id: 6,
+    name: 'Кирилл Кириллов',
+    position: 'Менеджер ООО “Раз-два”',
+    img_URL: './IMG/name_face.jpg'
+  }
+]
+const reviewsContacts = document.querySelector('.reviews_contacts');
+const prevBtn3 = document.getElementById('prevBtn3');
+const nextBtn3 = document.getElementById('nextBtn3');
+let currentIndex3 = 0;
+
+function updateCard(index) {
+  const el = section_reviews_contacts[index];
+  const cardElem = document.createElement('div');
+  const cardElemH4H5 = document.createElement('div')
+  const nameElem = document.createElement('h4');
+  const positionElem = document.createElement('h5');
+  const imgElem = document.createElement('img');
+
+  cardElem.className = 'name_position'
+  cardElemH4H5.className = 'div_name_position'
+  imgElem.className = 'img_blok_review'
+
+  nameElem.innerText = el.name;
+  positionElem.innerText = el.position;
+  imgElem.style.backgroundImage = `url('${el.img_URL}')`;
+
+  cardElem.append(imgElem, cardElemH4H5);
+  cardElemH4H5.append(nameElem, positionElem);
+  reviewsContacts.innerHTML = '';
+  reviewsContacts.append(cardElem);
+}
+
+updateCard(currentIndex3);
+
+prevBtn3.addEventListener('click', () => {
+  currentIndex3 = (currentIndex3 - 1 + section_reviews_contacts.length) % section_reviews_contacts.length;
+  updateCard(currentIndex3);
+});
+
+nextBtn3.addEventListener('click', () => {
+  currentIndex3 = (currentIndex3 + 1) % section_reviews_contacts.length;
+  updateCard(currentIndex3);
+});

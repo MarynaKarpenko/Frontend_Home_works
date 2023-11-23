@@ -26,13 +26,13 @@ h2{
 .left_rigcht_btn {
     display: flex;
     justify-content: right;
-    cursor: pointer;
 }
 .left_btn2,
 .right_btn2 {
     width: 60px;
     height: 60px;
     background: var(--Accent, #005FA3);
+    color: #FFFFFF;
     border: none;
 }
 .left_btn2:hover,
@@ -140,7 +140,6 @@ header > div{
     font-weight: 900;
 }
 .sessions_container div:hover{
-    cursor: pointer;
     background: #005FA3A6;
     opacity: 0.65;
     background-blend-mode: overlay;
@@ -210,9 +209,63 @@ header > div{
 }
 
 /* Отзывы */
-.contacts h2{
+.reviews{
+    padding: 140px 0 140px 0;
+}
+.reviews h2{
     margin: 40px 0 80px 0;
 }
+.blok_review{
+    width: 1110px;
+    height: 320px;
+    padding: 45px 95px 45px 95px;
+    background: #EBEBEB;
+    margin-bottom: 50px;
+}
+.blok_review p{
+    padding-bottom: 60px;
+    width: 920px;
+    height: 92px;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+}
+.name_position{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 17px;
+}
+.div_name_position{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.reviews_contacts h4{
+    color: #000;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 900;
+}
+.reviews_contacts h5{
+    color: var(--4-f-4-f-4-f, #4F4F4F);
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+}
+.img_blok_review{
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 80px;
+    border: none;
+}
+
 
 footer{
     display: flex;
@@ -232,6 +285,7 @@ footer h6{
 @media(max-width: 850px) {
     .wrapper{
         width: 100%;
+        padding: 0 85px;
     }
     .burger_menu {
         display: block;
@@ -248,23 +302,19 @@ footer h6{
         justify-content: space-between;
         align-items: center;
     }
-
+    .content_p{
+        width: auto;
+    }
+        h2{
+            font-size: 24px;
+        }
     .sessions_container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;     
     }
-    .presentation_section {
-        height: 100%;
-    }
-    .img_presentation_section{
-        width: auto;
-        height: 670px;
-    }
-    .left_rigcht_btn{
-        justify-content: left;
-    }
+
     .about_wrapper{
         display: flex;
         flex-direction: column;
@@ -276,4 +326,23 @@ footer h6{
         justify-content: center;
         flex-direction: column;
     }
+    .about p{
+        width: auto;
+        margin-bottom: 40px;
+    }
+    .section_our_clients, .blok_review, .blok_review p{
+        height: auto;
+        width: 100%;
+    }
+    .reviews_contacts{
+        display: none;
+    }
+        .left_btn2,
+        .right_btn2{
+            width: 56.693px;
+            height: 60px;
+        }
+        footer{
+            padding: 0 85px;
+        }
 }
