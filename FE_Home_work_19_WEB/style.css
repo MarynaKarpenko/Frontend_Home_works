@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+
+.wrapper {
     width: 1116px;
     margin: 0 auto;
 }
-h3{
+
+h3 {
     padding-bottom: 40px;
 
     font-family: 'Lato';
@@ -17,16 +19,19 @@ h3{
     font-weight: 900;
     color: #BDBDBD;
 }
-h2{
+
+h2 {
     font-family: 'Merriweather';
     font-size: 48px;
     font-weight: 900;
     color: #333;
 }
+
 .left_rigcht_btn {
     display: flex;
     justify-content: right;
 }
+
 .left_btn2,
 .right_btn2 {
     width: 60px;
@@ -35,17 +40,20 @@ h2{
     color: #FFFFFF;
     border: none;
 }
+
 .left_btn2:hover,
 .right_btn2:hover {
     opacity: 0.2;
 }
+
 /*NAV*/
-header > div{
+header>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav_menu{
+
+.nav_menu {
     display: flex;
     align-items: center;
     gap: 68px;
@@ -57,7 +65,8 @@ header > div{
     font-weight: 700;
     letter-spacing: 1.4px;
 }
-.nav_menu li{
+
+.nav_menu li {
     list-style: none;
 }
 
@@ -68,16 +77,19 @@ header > div{
 
     display: none;
 }
+
 /* Бухгалтерские услуги в вашем городе */
-.img_presentation_section{
+.img_presentation_section {
     position: relative;
     width: 100%;
     height: 670px;
 }
-.content_p{
+
+.content_p {
     width: 589px;
     height: 117px;
 }
+
 .content {
     position: absolute;
     top: 0;
@@ -88,7 +100,8 @@ header > div{
     font-weight: 700;
     color: #fff;
 }
-.presentation_btn{
+
+.presentation_btn {
     width: 270px;
     height: 60px;
 
@@ -100,32 +113,39 @@ header > div{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.left_btn, .right_btn{
+
+.left_btn,
+.right_btn {
     width: 60px;
     height: 60px;
     opacity: 0.4;
     background: #FFF;
     border: none;
 }
+
 .left_btn:hover,
-.right_btn:hover{
+.right_btn:hover {
     opacity: 0.2;
 }
+
 /* Наши услуги */
-.services_section{
+.services_section {
     padding: 140px 0;
     background-color: #EBEBEB;
 }
+
 .sessions_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 360px;
     gap: 30px;
 }
+
 .services_section h2 {
     margin: 40px 0 100px 0;
 }
-.sessions_container p{
+
+.sessions_container p {
     width: 350px;
     height: 360px;
     background-position: center;
@@ -139,29 +159,34 @@ header > div{
     font-size: 24px;
     font-weight: 900;
 }
-.sessions_container div:hover{
+
+.sessions_container div:hover {
     background: #005FA3A6;
     opacity: 0.65;
     background-blend-mode: overlay;
 }
 
 /* О нас */
-.section_about{
+.section_about {
     padding: 140px 0;
     background: #F9F9F9;
 }
-.about_wrapper{
+
+.about_wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.about.black{
+
+.about.black {
     color: #333;
 }
-.about > .blue {
+
+.about>.blue {
     color: #005FA3;
     padding-bottom: 60px;
 }
-.about > p{
+
+.about>p {
     width: 445px;
     height: 245px;
     color: #000;
@@ -169,12 +194,14 @@ header > div{
     font-size: 18px;
     font-weight: 300;
 }
-.about_img{
+
+.about_img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-.about_img div{
+
+.about_img div {
     width: 255px;
     height: 255px;
     background: #EBEBEB;
@@ -187,42 +214,49 @@ header > div{
     padding-top: 30px;
     padding-left: 40px;
 }
-.about_img div:hover{
+
+.about_img div:hover {
     background-color: #005FA3;
     color: white;
 }
+
 .about_img div:hover a {
     color: white !important;
 }
 
 /* Наши клиенты */
-.section_our_clients h2{
+.section_our_clients h2 {
     margin: 40px 0 80px 0;
 }
-.section_our_clients{
+
+.section_our_clients {
     background: #EBEBEB;
     height: 630px;
     padding: 100px 0 100px 0;
 }
-.microsoft img{
+
+.microsoft img {
     padding: 0 20px 0 0;
 }
 
 /* Отзывы */
-.reviews{
+.reviews {
     padding: 140px 0 140px 0;
 }
-.reviews h2{
+
+.reviews h2 {
     margin: 40px 0 80px 0;
 }
-.blok_review{
+
+.blok_review {
     width: 1110px;
     height: 320px;
     padding: 45px 95px 45px 95px;
     background: #EBEBEB;
     margin-bottom: 50px;
 }
-.blok_review p{
+
+.blok_review p {
     padding-bottom: 60px;
     width: 920px;
     height: 92px;
@@ -231,32 +265,37 @@ header > div{
     font-size: 18px;
     font-weight: 300;
 }
-.name_position{
+
+.name_position {
     display: flex;
     flex-direction: row;
     justify-content: left;
     gap: 17px;
 }
-.div_name_position{
+
+.div_name_position {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     gap: 10px;
 }
-.reviews_contacts h4{
+
+.reviews_contacts h4 {
     color: #000;
     font-family: 'Lato';
     font-size: 18px;
     font-weight: 900;
 }
-.reviews_contacts h5{
+
+.reviews_contacts h5 {
     color: var(--4-f-4-f-4-f, #4F4F4F);
     font-family: 'Lato';
     font-size: 14px;
     font-weight: 400;
 }
-.img_blok_review{
+
+.img_blok_review {
     width: 80px;
     height: 80px;
     background-size: cover;
@@ -266,15 +305,52 @@ header > div{
     border: none;
 }
 
+/* Contacts */
+/* .img_contacts {
+    position: relative;
+    width: 100%;
+    height: 623px;
+}
 
-footer{
+.wrapper_contacts {
+    position: absolute;
+    color: var(--White, #FFF);
+    padding: 120px 0 140px 0;
+}
+
+.connection {
+}
+
+.contacts h2 {
+    font-family: 'Merriweather';
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.contacts p {
+    width: 445px;
+    height: 43px;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+} */
+
+
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 133px;
     padding: 50px 0;
 }
-footer h6{
+
+footer h6 {
     color: #000;
     font-family: 'Lato';
     font-size: 14px;
@@ -283,66 +359,81 @@ footer h6{
 
 
 @media(max-width: 850px) {
-    .wrapper{
+    .wrapper {
         width: 100%;
         padding: 0 85px;
     }
+
     .burger_menu {
         display: block;
         cursor: pointer;
     }
+
     .nav_menu {
         display: none;
     }
+
     .nav_menu.active {
         display: block;
     }
-    header{
+
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .content_p{
+
+    .content_p {
         width: auto;
     }
-        h2{
-            font-size: 24px;
-        }
+
+    h2 {
+        font-size: 24px;
+    }
+
     .sessions_container {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;     
+        flex-direction: column;
     }
 
-    .about_wrapper{
+    .about_wrapper {
         display: flex;
         flex-direction: column;
-        
+
     }
+
     .about_img {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    .about p{
+
+    .about p {
         width: auto;
         margin-bottom: 40px;
     }
-    .section_our_clients, .blok_review, .blok_review p{
+
+    .section_our_clients,
+    .blok_review,
+    .blok_review p {
         height: auto;
         width: 100%;
     }
-    .reviews_contacts{
+
+    .reviews_contacts {
         display: none;
     }
-        .left_btn2,
-        .right_btn2{
-            width: 56.693px;
-            height: 60px;
-        }
-        footer{
-            padding: 0 85px;
-        }
+
+    .left_btn2,
+    .right_btn2 {
+        width: 56.693px;
+        height: 60px;
+    }
+
+    footer {
+        padding: 0 85px;
+    }
 }

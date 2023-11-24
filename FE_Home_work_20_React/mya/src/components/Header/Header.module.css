@@ -1,0 +1,39 @@
+.wrapper {
+    padding: 20px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F4F9E2;
+}
+
+.logo {
+    width: 118px;
+    border-radius: 50%;
+}
+
+.connection {
+    font-size: 14px;
+    font-style: italic;
+    width: 150px;
+    height: 50px;
+    background-color: #F9B640;
+    color: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav_link {
+    font-family: 'ABeeZee';
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.nav_link:not(:last-child) {
+    margin-right: 70px;
+}
+
+.nav_link:not(:first-child) {
+    text-decoration: none;
+}

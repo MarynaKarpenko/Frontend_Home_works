@@ -1,0 +1,22 @@
+.rent {
+    height: 800px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.rent_img {
+    height: 100%;
+}
+
+.rent_text {
+    color: #22356F;
+    font-size: 36px;
+    font-style: italic;
+    padding-left: 57px;
+    padding-right: 57px;
+}
+
+.rent_text_h5 {
+    padding-bottom: 50px;
+}

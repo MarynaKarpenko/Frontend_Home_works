@@ -325,3 +325,20 @@ nextBtn3.addEventListener('click', () => {
   currentIndex3 = (currentIndex3 + 1) % section_reviews_contacts.length;
   updateCard(currentIndex3);
 });
+
+/* FORM */
+// const usedrForm = document.querySelector('.user_form');
+// usedrForm.addEventListener('submit', (event) => {
+//   event.preventDefault();
+
+//   const {first_name, last_name, massege} = event.target
+
+//   const user = {
+//     id: Date.now(),
+//     first_name: event.target.value,
+//     last_name: last_name.value,
+//     massege: massege.value
+//   }
+
+//   console.log(user);
+// },);

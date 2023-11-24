@@ -1,0 +1,30 @@
+.advertising {
+    display: flex;
+    align-items: center;
+    height: 607px;
+    background-color: #62D0DF;
+}
+
+.advertising_text {
+    width: 63%;
+    text-align: justify;
+    padding: 0 160px;
+}
+
+.dvertising_text_title {
+    color: #FFF;
+    font-size: 36px;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+
+.dvertising_text_par {
+    color: #FFF;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.advertising_img {
+    width: 37%;
+    height: 100%;
+}

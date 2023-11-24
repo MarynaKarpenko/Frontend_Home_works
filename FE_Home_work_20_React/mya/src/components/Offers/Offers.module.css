@@ -1,0 +1,35 @@
+.offers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 480px;
+    color: #FFF;
+    font-size: 32px;
+    font-style: italic;
+}
+.that {
+    background: #22356F;
+    display: grid;
+    grid-auto-rows: 126px;
+}
+
+.wheel {
+    background: #0052C1;
+    display: grid;
+    grid-auto-rows: 126px;
+}
+
+.setting {
+    background: #76B58B;
+    display: grid;
+    grid-auto-rows: 126px;
+}
+
+.offers_text {
+    padding-left: 70px;
+}
+
+.offers_img {
+    width: 340px;
+    padding-top: 100px;
+    justify-self: center;
+}

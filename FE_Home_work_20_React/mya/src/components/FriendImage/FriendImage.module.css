@@ -1,0 +1,14 @@
+.friend_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 633px;
+    background-color: #FFFFFF;
+    color: #22356F;
+    font-size: 24px;
+    font-style: italic;
+    padding-left: 400px;
+    padding-right: 300px;
+    gap: 40px;
+}
