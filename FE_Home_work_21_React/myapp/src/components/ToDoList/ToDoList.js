@@ -1,23 +1,23 @@
 import React from 'react'
 import style from './ToDoList.module.css'
+import { RxCross1 } from "react-icons/rx";
 
 function ToDoList(props) {
 
     const {title, completed, id, delTodoById, changeCompletedTodo} = props
 
     const card_styles = {
-        backgroundColor: completed ? 'green' : 'red'
+        backgroundColor: completed ? '#1ABC9C' : '#E74C3C'
     }
 
     return(
-        <div className={style.todo_card}
+        <div
+        className={style.todo_cards}
         style={card_styles}
-        onDoubleClick={() => delTodoById(id)}
         onClick={() => changeCompletedTodo(id)}
         >
-
+            <RxCross1 className={style.close_icon} onDoubleClick={() => delTodoById(id)}/>
             <h2>{title}</h2>
-            <p>{completed+''}</p>
         </div>
     )
 }

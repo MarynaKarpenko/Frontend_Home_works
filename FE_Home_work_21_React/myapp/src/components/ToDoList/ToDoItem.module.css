@@ -5,7 +5,8 @@
     background: #ECF0F1;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
+    flex-wrap: wrap;
 
     margin: 0 80px 40px 80px;
     margin-bottom: 20px;
@@ -20,4 +21,5 @@
     padding: 10px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }

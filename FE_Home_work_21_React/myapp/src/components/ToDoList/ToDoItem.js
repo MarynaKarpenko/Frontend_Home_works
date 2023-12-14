@@ -25,7 +25,7 @@ function ToDoItem(props) {
         <div key={day} className={style.todo_card}>
           <h2 className={style.day}>{getDayOfWeek(day)}</h2>
           {todos.map((elem) => (
-            elem.day === getDayAbbreviation(day) && (
+            elem.day.toLowerCase() === getDayAbbreviation(day).toLowerCase() && (
               <ToDoList
                 key={elem.id}
                 id={elem.id}
