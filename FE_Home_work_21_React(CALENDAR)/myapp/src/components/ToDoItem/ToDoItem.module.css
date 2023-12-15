@@ -1,15 +1,14 @@
 .todo_card {
     width: 1088px;
-    height: auto;
+
     border-radius: 20px;
     background: #ECF0F1;
 
     display: flex;
     justify-content: start;
-    flex-wrap: wrap;
+    
 
-    margin: 0 80px 40px 80px;
-    margin-bottom: 20px;
+    margin-bottom: 40px ;
 }
 
 .day {
@@ -22,4 +21,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
 }

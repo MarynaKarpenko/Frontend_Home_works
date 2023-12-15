@@ -1,25 +1,33 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import AddForms from './components/AddForms/AddForms';
 import ToDoList from './components/ToDoList/ToDoList';
-import ToDoItem from './components/ToDoList/ToDoItem';
+import ToDoItem from './components/ToDoItem/ToDoItem';
 
 function App() {
 
-  const daysOfWeek = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+  const daysOfWeek = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
 
-    const start_todos = [
-    {id: 1, title: 'Купить дверь', completed: true, day: 'ПН'},
-    {id: 2, title: 'Сходить в зал', completed: false, day: 'ПН'},
-    {id: 3, title: 'Купить дверь', completed: true, day: 'ВТ'},
-    {id: 4, title: 'Сходить в зал', completed: true, day: 'ВТ'},
-    {id: 5, title: 'Купить ручку', completed: true, day: 'ВТ'},
-    {id: 6, title: 'Помыть кота', completed: true, day: 'ВТ'},
-    {id: 7, title: 'Починить свет', completed: true, day: 'ВТ'},
-    {id: 8, title: 'Зарядить воду', completed: true, day: 'СР'}
-  ]
+  const initialData = JSON.parse(localStorage.getItem('todos')) || []
 
-  const [todos, setTodos] = useState(start_todos);
+  //   const start_todos = [
+  //   {id: 1, title: 'Купить дверь', completed: true, day: 'ПН'},
+  //   {id: 2, title: 'Сходить в зал', completed: false, day: 'ПН'},
+  //   {id: 3, title: 'Купить дверь', completed: true, day: 'ВТ'},
+  //   {id: 4, title: 'Сходить в зал', completed: true, day: 'ВТ'},
+  //   {id: 5, title: 'Купить ручку', completed: true, day: 'ВТ'},
+  //   {id: 6, title: 'Помыть кота', completed: true, day: 'ВТ'},
+  //   {id: 7, title: 'Починить свет', completed: true, day: 'ВТ'},
+  //   {id: 8, title: 'Зарядить воду', completed: true, day: 'СР'}
+  // ]
+
+  const [todos, setTodos] = useState(initialData);
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
+  
+
   const [newTodo, setNewTodo] = useState({
     title: '',
     day: '',
@@ -68,7 +76,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='content_div'>
       <AddForms newTodo={newTodo} setNewTodo={setNewTodo} addTodo={addTodo} />
       <ToDoItem
         todos={todos}

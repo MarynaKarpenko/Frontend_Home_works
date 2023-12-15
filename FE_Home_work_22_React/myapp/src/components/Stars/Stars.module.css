@@ -1,0 +1,5 @@
+.star{
+    display: flex;
+    gap: 5px;
+    color: rgba(196, 196, 13, 0.721);
+}

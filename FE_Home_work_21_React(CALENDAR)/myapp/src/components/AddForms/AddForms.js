@@ -46,6 +46,9 @@ export default function AddForms({ newTodo, setNewTodo, addTodo }) {
               ))}
             </select>
           </div>
+          
+        </div>
+        <div className={style.div_button}>
           <input
             className={style.add_forms_description}
             placeholder="Описание"
@@ -54,8 +57,6 @@ export default function AddForms({ newTodo, setNewTodo, addTodo }) {
             value={newTodo.title}
             onChange={handleChange}
           />
-        </div>
-        <div className={style.div_button}>
           <button
             className={style.add_forms_button}
             type="button"

@@ -16,8 +16,11 @@ function ToDoList(props) {
         style={card_styles}
         onClick={() => changeCompletedTodo(id)}
         >
-            <RxCross1 className={style.close_icon} onDoubleClick={() => delTodoById(id)}/>
-            <h2>{title}</h2>
+            <div>
+                <RxCross1 className={style.close_icon} onDoubleClick={() => delTodoById(id)}/>
+                <h2>{title}</h2>
+            </div>
+            
         </div>
     )
 }

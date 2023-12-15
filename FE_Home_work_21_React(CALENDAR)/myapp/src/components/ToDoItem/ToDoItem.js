@@ -1,13 +1,13 @@
-import ToDoList from "./ToDoList"
+import ToDoList from "../ToDoList/ToDoList"
 import style from './ToDoItem.module.css'
 
 const getDayOfWeek = (day) => {
-  const daysOfWeek = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+  const daysOfWeek = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
   return daysOfWeek[day];
 };
 
 const getDayAbbreviation = (day) => {
-  const daysAbbreviation = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+  const daysAbbreviation = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
   return daysAbbreviation[day];
 };
 
@@ -20,7 +20,7 @@ function ToDoItem(props) {
   };
 
   return (
-    <div>
+    <div className={style.card}>
       {[...Array(7).keys()].map((day) => (
         <div key={day} className={style.todo_card}>
           <h2 className={style.day}>{getDayOfWeek(day)}</h2>

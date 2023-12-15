@@ -1,10 +1,10 @@
 .todo_cards{
-    display: flex;
-    justify-content: center;
-    width: 289px;
-
-    margin: 20px;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 286px;
+    height: 47px;
+    margin: 17px;
+    padding-left: 10px;
 
     color: #ECF0F1;
     font-size: 20px;

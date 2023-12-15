@@ -6,9 +6,12 @@
 }
 
 body{
-    width: 1251px;
-    height: 982px;
+    max-width: 1251px;
     background: #1ABC9C;
 
     font-family: 'Inter';
+    font-weight: 400;
+}
+.content_div{
+    margin: 80px;
 }
