@@ -12,7 +12,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path='/' element={<AboutPage/>}></Route>
-          <Route path='/products' element={<ProductInfoPage/>}></Route>
+          <Route path='/:id' element={<ProductInfoPage/>}></Route>
           <Route path='*' element={<NotFoundPage/>}></Route>
         </Routes>
       </Router>
